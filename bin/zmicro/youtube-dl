@@ -1,0 +1,17 @@
+#!/bin/bash
+
+help() {
+  echo "Usage:"
+  echo "  zmicro youtube-dl <args ...>"
+  echo ""
+}
+
+core() {
+  youtube-dl "$@"
+}
+
+run() {
+  core "$@"
+}
+
+run "$@"
